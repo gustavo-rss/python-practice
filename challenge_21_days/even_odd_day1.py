@@ -1,4 +1,3 @@
-
 # Challenge day 1 - Even or odd number 
 number = int(input('Input a number: '))
 
