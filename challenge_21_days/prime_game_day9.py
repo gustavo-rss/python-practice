@@ -18,8 +18,11 @@ while exit == False:
         print('Correct!')
         score += 1
     elif isPrime and answer == 2 or isPrime == False and answer == 1:
-        print('Incorrect! You lost the game!')
-        exit = True
+        print('Incorrect!')
+        score -= 1
+        if score == 0:
+            print('Incorrect! You lost the game!')
+            exit = True
     elif answer == 3:
         print('\nYour score:', score)
     elif answer == 4:
