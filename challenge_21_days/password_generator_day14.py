@@ -52,8 +52,8 @@ def passwordGenerator  (defined_lenght, contains_numbers, contains_upper, contai
                 if defined_lenght > len(password):
                     if contains_lower == 1: password+= random.choice(string.ascii_lowercase)
                 if defined_lenght > len(password):
-                    if contains_special == 1:   password+= random.choice(string.punctuation)
-            return print('Generated password:', password, 'has the lenght of', len(password))
+                    if contains_special == 1:   password+= random.choice(string.punctuation)        
+    return print('Generated password:', password, 'has the lenght of', len(password))
     
 
 passwordGenerator(defined_lenght, contains_numbers, contains_upper, contains_lower, contains_special)
